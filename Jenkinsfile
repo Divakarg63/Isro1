@@ -2,7 +2,7 @@ pipeline {
 agent any
 
 environment {
-    DOCKER_IMAGE = "rajeshtutta123/isro_project_img"
+    DOCKER_IMAGE = "divakar2141/isro_project_img"
 }
 
 stages {
@@ -10,8 +10,8 @@ stages {
     stage('GIT CHECKOUT') {
         steps {
             git branch: 'main',
-            credentialsId: 'rajeshcred',
-            url: 'https://github.com/rajeshtutta/Isro1.git'
+            credentialsId: 'Divaa',
+            url: 'https://github.com/Divakarg63/Isro1.git'
         }
     }
 
